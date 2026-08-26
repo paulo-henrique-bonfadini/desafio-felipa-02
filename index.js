@@ -1,10 +1,12 @@
 
+ rankeamento()
 
-function rankeamento(nivel){
+function rankeamento(){
 
-let vitorias = 100
-let derrotas = 1
+let vitorias = 101
+let derrotas = 0
 let saldoVitorias = vitorias - derrotas
+let nivel 
 
 if (saldoVitorias <= 10){
     nivel = "Ferro"
@@ -15,13 +17,13 @@ if (saldoVitorias <= 10){
 }else if (saldoVitorias >= 51 && saldoVitorias <= 80){
     nivel = "Ouro"
 }else if (saldoVitorias >= 81 && saldoVitorias <= 90){
-    nivel = "Diamanet"
+    nivel = "Diamante"
 }else if (saldoVitorias >= 91 && saldoVitorias <= 100){
     nivel = "Lendário"
 }else if (saldoVitorias >= 101){
     nivel = "Imortal"
 }
-console.log ("O Herói tem de saldo de " + saldoVitorias + "está no nível de " + nivel)
+console.log ("O Herói tem de saldo de " + saldoVitorias + " está no nível de " + nivel)
 }
 
 
